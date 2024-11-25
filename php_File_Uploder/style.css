@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.msg_g {
+    background-color: rgb(94, 255, 0);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none; /* Initially hidden */
+    border-radius: 10px;
+}
+.msg_r {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none; /* Initially hidden */
+    border-radius: 10px;
+}
+
+.msg.show {
+    display: block; /* Show the message */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+form {
+    background-color: rgb(212, 212, 212);
+    position: absolute;
+    top: 50%; /* Keep form centered vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    padding: 20px 50px;
+    
+    height: auto; /* Allow the form to expand depending on content */
+    border-radius: 10px;
+}
+
+.if::-webkit-file-upload-button{
+    background-color: #1ce60a;
+    padding:8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #353434;
+    transition: all .2s ease-in-out;
+    box-shadow: 3px 3px 10px #000;
+    margin-right: 20px;
+}
+.if::-webkit-file-upload-button:hover{
+    background-color: #15ff00;
+    transform: scale(1.04);
+
+}
+
+input[type="FILE"] {
+    background-color: rgb(194, 194, 194);
+    padding: 5px;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+input[type="submit"]{
+   padding: 8px 20px;
+   background-color: #1ce60a;
+   font-size: 15px;
+   border-radius: 20px;
+   border: none;
+   font-weight: bold;
+   color: #353434;  
+   transition: all .2s ease-in-out;
+   box-shadow: 3px 3px 10px #000;
+
+}
+input[type="submit"]:hover{
+    background-color: #15ff00;
+    transform: scale(1.04);
+}
+ 
+.box{
+    margin-top: 40px;
+}
